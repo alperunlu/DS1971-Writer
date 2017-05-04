@@ -48,7 +48,7 @@ void sendCMD(int cmd)
 present = ds.reset();
 ds.select(addr);
 ds.write(cmd,1); // Scratchpad'i oku
-delay(2000);
+delay(500);
 memset(data, 0, 512);
 }
 
@@ -64,7 +64,7 @@ Serial.print("|");
 }
 Serial.print("\n");
 ds.reset();
-delay(1000);
+delay(250);
 return true;
 }
 
